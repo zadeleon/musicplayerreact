@@ -1,0 +1,135 @@
+:root {
+  font-family: 'Anton', sans-serif;;
+  color-scheme: light dark;
+  background-color: rgb(12, 13, 14);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  color: black;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.music-player{
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  height: 70vh;
+  width: 50vw;
+}
+
+.music-player__navigation{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+
+.music-player__app-registration{
+  align-content: flex-end;
+}
+
+.music-player__player-container{
+  align-items: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+}
+
+.music-player__about-artist{
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.music-player__control-buttons {
+  display: flex;
+    z-index: 1;
+}
+
+.music-player__control-button {
+  padding: 8px 16px;
+  margin: 0 60px;
+  margin-top: 12px;
+  cursor: pointer;
+  outline: none;
+  height: 40px;
+}
+
+.music-player__timeline {
+  width: 700px;
+  -webkit-appearance: none;
+  background:  rgb(12, 13, 14);
+  border-radius: 12px;
+  height: 10px;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.music-player__timeline::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: blue; /* Thumb color */
+  cursor: pointer;
+}
+
+.music-player__timeline:hover {
+  opacity: 1;
+}
+
+.music-player__time {
+  margin: 0 auto;
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  color: #828282;
+  font-size: smaller;
+}
+
+.music-player__timenduration{
+  margin-top: 10px;
+}
+
+.music-player__artist-song{
+  font-size: 70px;
+  margin: 48px;
+}
+
+.music-player__artist-name{
+  font-size: 30px;
+}
+
+#error-page{
+  color: white;
+}
+
+.music-player__app-name{
+  font-size: 20px;
+}
+
+.music-player__navigation{
+  font-size: 20px;
+}
+
+.videoTag{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.2;
+}
+
+
+
